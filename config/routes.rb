@@ -19,12 +19,12 @@ Rails.application.routes.draw do
   patch '/hospitals/:id' => 'hospitals#update'
   delete '/hospitals/:id' => 'hospitals#destroy'
  ##########################################################
-  get '/emt' => 'emt#index'
-  get '/emt/new' => 'emt#new'
-  post '/emt' => 'emt#create'
-  get '/emt/:id' => 'emt#show'
-  get '/emt/:id/edit' => 'emt#edit'
-  patch '/emt/:id' => 'emt#update'
-  delete '/emt/:id' => 'emt#destroy'
+  get '/emts' => 'emts#index'
+  get '/emts/new' => 'emts#new'
+  post '/emts' => 'emts#create'
+  get '/emts/:id' => 'emts#show'
+  get '/emts/:id/edit' => 'emts#edit'
+  patch '/emts/:id' => 'emts#update'
+  delete '/emts/:id' => 'emts#destroy'
  ##########################################################
 end

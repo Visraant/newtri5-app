@@ -780,14 +780,16 @@
                     Profile
                   </a>
                   <ul class="dropdown-menu pull-right">
+                    <li><%= link_to "Patients Not Checked In", "/" %></li>
+                    <li><%= link_to "EMT Patients", "???????" %></li>
+                    <li><%= link_to "Sort by Patient Wait Time", "/hospitals?sort=patient_wait&sort_order=asc" %></li>
+                    <li><%= link_to "Patient Check In", "/patients/new" %></li>
                     <% if current_hospital == nil %>
                       <li><%= link_to "Sign Up", "/hospitals/sign_up" %></li>
                       <li><%= link_to "Sign In", "/hospitals/sign_in" %></li>
                     <% else %>
                       <li><%= link_to "Sign Out", "/hospitals/sign_out", method: :delete %></li>
                     <% end %>
-                    <li><%= link_to "Sort by Patient Wait Time", "/hospitals?sort=patient_wait&sort_order=desc" %></li>
-                    <li><a href="One-Pages/Travel/index.html">Travel</a></li>
                     <li><a href="One-Pages/App/index.html">Mobile App</a></li>
                     <li><a href="One-Pages/Shipping/index.html">Shipping</a></li>
                     <li><a href="One-Pages/Agency/index.html">Agency</a></li>
