@@ -1,0 +1,2 @@
+class EmtsController < ApplicationController
+end

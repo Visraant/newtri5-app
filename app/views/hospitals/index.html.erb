@@ -1,0 +1,317 @@
+    <!-- Interactive Slider v2 -->
+    <!-- <div class="interactive-slider-v2 interactive-slider-v2-md img-v3">
+      <div class="container">
+        <h1 class="cd-headline letters type">
+          <span>We are</span>
+          <span class="cd-words-wrapper">
+            <b class="is-visible">Unify</b>
+            <b>Awesome</b>
+            <b>Creative</b>
+          </span>
+        </h1>
+        <p>Clean and fully responsive Template.</p>
+      </div>
+    </div> -->
+    <!-- End Interactive Slider v2 -->
+
+
+
+    <!--=== About Us ===-->
+<!--     <div class="container content-md">
+      <div class="row">
+        <div class="col-md-6 md-margin-bottom-40">
+          <h2 class="title-v2">ABOUT US</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p><br>
+          <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-dark">Read More</a>
+          <a href="#" class="btn-u">Purchase Now</a>
+        </div>
+        <div class="col-md-6 overflow-h">
+          <img class="img-responsive wow animated fadeInUp" data-wow-duration="1.5s" src="assets/img/mockup/mockup1.png" alt="">
+        </div>
+      </div>
+    </div> -->
+    <!--=== End About Us ===-->
+
+<h1>Patients Waiting to be Treated:</h1>
+  <% @patients.each do |patient| %>
+    <div>
+      <h2>Name: <%= patient.first_name %> <%= patient.last_name %></h2>
+        <ul>
+          <li>Email: <%= patient.email %></li>
+          <li>Gender: <%= patient.gender %></li>
+          <li>Birthdate: <%= patient.birthdate %></li>
+          <li>Reason for Visit: <%= patient.reason_for_visit %></li>
+        </ul>
+    </div>
+  <% end %>
+
+    <!--=== Full Width Blocks ===-->
+    <div class="container-fluid bg-color-darker">
+      <div class="row equal-height-columns no-gutter">
+        <div class="col-md-6">
+          <img class="img-responsive full-width equal-height-column" src="assets/img/bg/img9.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 equal-height-column text-center dp-table">
+          <div class="content-boxes-v3 dp-table-cell quote-v1 parallaxBg">
+            <p>Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it.</p>
+            <span>Jimmy Howell, <a href="#">CEO, Director</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=== End Full Width Blocks ===-->
+
+    <!--=== Colorfull Blocks ===-->
+    <div class="container-fluid">
+      <div class="row no-gutter equal-height-columns">
+        <div class="col-sm-4">
+          <div class="service-block service-block-purple no-margin-bottom content equal-height-column">
+            <i class="icon-custom icon-md rounded icon-color-light icon-line icon-badge"></i>
+            <h2 class="font-light">Best Solutions</h2>
+            <p class="no-margin-bottom font-light">Provide; shifting landscape reduce carbon emissions human potential sustainability Jane Addams solve. Global network; care Rockefeller, vaccines equal opportunity human being.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-block service-block-red no-margin-bottom content equal-height-column">
+            <i class="icon-custom icon-md rounded icon-color-light icon-line icon-layers"></i>
+            <h2 class="font-light">Excellent Features</h2>
+            <p class="no-margin-bottom font-light">Provide; shifting landscape reduce carbon emissions human potential sustainability Jane Addams solve. Global network; care Rockefeller, vaccines equal opportunity human being.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-block service-block-blue no-margin-bottom content equal-height-column">
+            <i class="icon-custom icon-md rounded icon-color-light icon-line icon-support"></i>
+            <h2 class="font-light">Stunning Support</h2>
+            <p class="no-margin-bottom font-light">Provide; shifting landscape reduce carbon emissions human potential sustainability Jane Addams solve. Global network; care Rockefeller, vaccines equal opportunity human being.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=== End Colorfull Blocks ===-->
+
+    <!--=== Cube Portfolio ===-->
+    <div class="container content-md">
+      <div class="text-center margin-bottom-30">
+        <h2 class="title-v2 title-center">LATEST PROJECTS</h2>
+        <p class="space-lg-hor">If you are going to use a <span class="color-green">passage of Lorem Ipsum</span>, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making <span class="color-green">this the first</span> true generator on the Internet.</p>
+      </div>
+
+      <div class="cube-portfolio container margin-bottom-20">
+        <div class="margin-bottom-30">
+          <div id="filters-container" class="cbp-l-filters-text">
+            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All </div> |
+            <div data-filter=".illustration" class="cbp-filter-item"> Illustration </div> |
+            <div data-filter=".web-design" class="cbp-filter-item"> Web Design </div> |
+            <div data-filter=".graphic" class="cbp-filter-item"> Graphic </div> |
+            <div data-filter=".logo" class="cbp-filter-item"> Logo </div>
+          </div><!--/end Filters Container-->
+        </div>
+
+        <div id="grid-container" class="cbp-l-grid-gallery">
+          <div class="cbp-item illustration web-design">
+            <a href="assets/ajax/cube-portfolio/project1.html" class="cbp-caption cbp-singlePageInline"
+            data-title="World Clock Widget<br>by Paul Flavius Nechita">
+            <div class="cbp-caption-defaultWrap">
+              <img src="assets/img/portfolio/20.jpg" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignLeft">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Paul Flavius</div>
+                  <div class="cbp-l-caption-desc">Development</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="cbp-item web-design logo">
+          <a href="assets/ajax/cube-portfolio/project2.html" class="cbp-caption cbp-singlePageInline"
+          data-title="Bolt UI<br>by Tiberiu Neamu">
+          <div class="cbp-caption-defaultWrap">
+            <img src="assets/img/portfolio/19.jpg" alt="">
+          </div>
+          <div class="cbp-caption-activeWrap">
+            <div class="cbp-l-caption-alignLeft">
+              <div class="cbp-l-caption-body">
+                <div class="cbp-l-caption-title">Tiberiu Neamu</div>
+                <div class="cbp-l-caption-desc">Web-Design</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="cbp-item illustration web-design">
+        <a href="assets/ajax/cube-portfolio/project3.html" class="cbp-caption cbp-singlePageInline"
+        data-title="WhereTO App<br>by Tiberiu Neamu">
+        <div class="cbp-caption-defaultWrap">
+          <img src="assets/img/portfolio/21.jpg" alt="">
+        </div>
+        <div class="cbp-caption-activeWrap">
+          <div class="cbp-l-caption-alignLeft">
+            <div class="cbp-l-caption-body">
+              <div class="cbp-l-caption-title">Tiberiu Neamu</div>
+              <div class="cbp-l-caption-desc">Illustration</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="cbp-item web-design illustration">
+      <a href="assets/ajax/cube-portfolio/project4.html" class="cbp-caption cbp-singlePageInline"
+      data-title="iDevices<br>by Tiberiu Neamu">
+      <div class="cbp-caption-defaultWrap">
+        <img src="assets/img/portfolio/22.jpg" alt="">
+      </div>
+      <div class="cbp-caption-activeWrap">
+        <div class="cbp-l-caption-alignLeft">
+          <div class="cbp-l-caption-body">
+            <div class="cbp-l-caption-title">Tiberiu Neamu</div>
+            <div class="cbp-l-caption-desc">Illustration</div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+    <div class="cbp-item web-design graphic">
+      <a href="assets/ajax/cube-portfolio/project5.html" class="cbp-caption cbp-singlePageInline"
+      data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">
+      <div class="cbp-caption-defaultWrap">
+        <img src="assets/img/portfolio/24.jpg" alt="">
+      </div>
+      <div class="cbp-caption-activeWrap">
+        <div class="cbp-l-caption-alignLeft">
+          <div class="cbp-l-caption-body">
+            <div class="cbp-l-caption-title">Tiberiu Neamu</div>
+            <div class="cbp-l-caption-desc">Illustration</div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="cbp-item illustration web-design graphic">
+    <a href="assets/ajax/cube-portfolio/project6.html" class="cbp-caption cbp-singlePageInline"
+    data-title="Remind~Me Widget<br>by Tiberiu Neamu">
+    <div class="cbp-caption-defaultWrap">
+      <img src="assets/img/portfolio/23.jpg" alt="">
+    </div>
+    <div class="cbp-caption-activeWrap">
+      <div class="cbp-l-caption-alignLeft">
+        <div class="cbp-l-caption-body">
+          <div class="cbp-l-caption-title">Tiberiu Neamu</div>
+          <div class="cbp-l-caption-desc">Web-Design</div>
+        </div>
+      </div>
+    </div>
+  </a>
+  </div>
+  </div><!--/end Grid Container-->
+  </div>
+  </div>
+  <!--=== End Cube Portfolio ===-->
+
+  <!--=== Parallax Counter v1 ===-->
+  <div class="parallax-counter-v1 parallaxBg">
+    <div class="container">
+      <h2 class="title-v2 title-light title-center">SOME FACTS AND SERVICES</h2>
+      <p class="space-xlg-hor text-center color-light">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+
+      <div class="margin-bottom-40"></div>
+
+      <div class="row">
+        <div class="col-sm-3 col-xs-6 md-margin-bottom-20">
+          <div class="counters">
+            <span class="counter">10629</span>
+            <h4>Users</h4>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6 md-margin-bottom-20">
+          <div class="counters">
+            <span class="counter">277</span>
+            <h4>Projects</h4>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="counters">
+            <span class="counter">78</span>
+            <h4>Team Members</h4>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="counters">
+            <span class="counter">109</span>
+            <h4>Awards</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=== End Parallax Counter v1 ===-->
+
+  <!--=== News Block ===-->
+  <div class="container content-md">
+    <div class="text-center margin-bottom-50">
+      <h2 class="title-v2 title-center">RECENT NEWS</h2>
+      <p class="space-lg-hor">If you are going to use a <span class="color-green">passage of Lorem Ipsum</span>, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making <span class="color-green">this the first</span> true generator on the Internet.</p>
+    </div>
+
+    <div class="row news-v2">
+      <div class="col-md-4 md-margin-bottom-30">
+        <div class="news-v2-badge">
+          <img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
+          <p>
+            <span>26</span>
+            <small>Feb</small>
+          </p>
+        </div>
+        <div class="news-v2-desc bg-color-light">
+          <h3><a href="#">Corrupti Quos Dolores</a></h3>
+          <small>By Admin | <a class="color-inherit" href="#">16 Comments</a> | In <a href="#">Web Trends</a></small>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+        </div>
+      </div>
+      <div class="col-md-4 md-margin-bottom-30">
+        <div class="news-v2-badge">
+          <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+          <p>
+            <span>24</span>
+            <small>Feb</small>
+          </p>
+        </div>
+        <div class="news-v2-desc bg-color-light">
+          <h3><a href="#">Blanditi Praesium Voluptum</a></h3>
+          <small>By Admin | <a class="color-inherit" href="#">51 Comments</a> | In <a href="#">Art &amp; Design</a></small>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="news-v2-badge">
+          <img class="img-responsive" src="assets/img/main/img16.jpg" alt="">
+          <p>
+            <span>21</span>
+            <small>Feb</small>
+          </p>
+        </div>
+        <div class="news-v2-desc bg-color-light">
+          <h3><a href="#">Key Digital Services</a></h3>
+          <small>By Admin | <a class="color-inherit" href="#">32 Comments</a> | In <a href="#">Google &amp; Android</a></small>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=== End News Block ===-->
+
+  <!--=== Hire Block ===-->
+  <div class="bg-color-light">
+    <div class="container content-sm">
+      <div class="headline-center">
+        <h2>WE ARE HIRING!</h2>
+        <p class="space-lg-hor">Lorem ipsum dolor <span class="color-green">sit amet consectetur</span> adipiscing elit. Nam eget varius leo, at elementum eros. Fusce tristique, ipsum egestas fermentum imperdiet, ex nunc iaculis sem, a semper augue turpis ut nulla. Nam condimentum arcu eu diam <span class="color-green">gravida cursus</span> morbi ante eros.</p><br>
+      </div>
+      <img class="img-responsive img-center wow animated fadeInUp" src="assets/img/map-img-v1.png" alt="">
+    </div>
+  </div>
+  <!--=== End Hire Block ===-->
