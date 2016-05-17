@@ -1,6 +1,7 @@
 class EmtsController < ApplicationController
   def new
     @emts = Emt.all
+    @emt = Emt.new
     @hospitals = Hospital.all
   end
 

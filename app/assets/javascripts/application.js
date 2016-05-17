@@ -11,6 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require moment
+//= require humanizeDuration
+//= require angular
+//= require angular-timer.min
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .

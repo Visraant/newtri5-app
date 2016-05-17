@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  namespace :api do
+  namespace :v1 do
+    get '/patients' => 'patients#index'
+    get '/patients/:id' => 'patients#check_in'
+    end
+  end
+
   devise_for :hospitals
   
   # get '/' => 'patients#index'
@@ -14,7 +21,8 @@ Rails.application.routes.draw do
   get '/hospitals' => 'hospitals#index'
   get '/hospitals/new' => 'hospitals#new'
   post '/hospitals' => 'hospitals#create'
-  get '/hospitals/:id' => 'hospitals#show'
+  # get '/hospitals/:id' => 'hospitals#show'
+  get '/hospitals/emts' => 'hospitals#home'
   get '/hospitals/:id/edit' => 'hospitals#edit'
   patch '/hospitals/:id' => 'hospitals#update'
   delete '/hospitals/:id' => 'hospitals#destroy'

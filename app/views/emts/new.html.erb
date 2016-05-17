@@ -16,48 +16,48 @@
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="First Name"> -->
-        <%= text_field_tag :emt_name, class: "form-control", placeholder: "Name" %>
+        <%= text_field_tag :emt_name, @emt.emt_name, class: "form-control", placeholder: "EMT Name" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Last Name"> -->
-        <%= text_field_tag :emt_phone_number, class: "form-control", placeholder: "Last Name" %>
+        <%= text_field_tag :emt_phone_number, @emt.emt_phone_number, class: "form-control", placeholder: "EMT Phone Number" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Gender"> -->
-        <%= text_field_tag :patient_name, class: "form-control", placeholder: "Gender" %>
+        <%= text_field_tag :patient_name, @emt.patient_name, class: "form-control", placeholder: "Patient Name" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Gender"> -->
-        <%= text_field_tag :patient_gender, class: "form-control", placeholder: "Gender" %>
+        <%= text_field_tag :patient_gender, @emt.patient_gender, class: "form-control", placeholder: "Patient Gender" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Gender"> -->
-        <%= text_field_tag :patient_age, class: "form-control", placeholder: "Gender" %>
+        <%= text_field_tag :patient_age, @emt.patient_age, class: "form-control", placeholder: "Patient Age" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Gender"> -->
-        <%= text_field_tag :patient_symptoms, class: "form-control", placeholder: "Gender" %>
+        <%= text_field_tag :patient_symptoms, @emt.patient_symptoms, class: "form-control", placeholder: "Patient Symptoms" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Gender"> -->
-        <%= text_field_tag :patient_condition, class: "form-control", placeholder: "Gender" %>
+        <%= text_field_tag :patient_condition, @emt.patient_condition, class: "form-control", placeholder: "Patient Condition" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Gender"> -->
-        <%= text_field_tag :patient_address, class: "form-control", placeholder: "Gender" %>
+        <%= text_field_tag :patient_address, @emt.patient_address, class: "form-control", placeholder: "Patient Address" %>
       </div>
       <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
         <!-- <input type="text" class="form-control" placeholder="Reason for Visit"> -->
         <%= label_tag :hospital %>
-        <%= collection_select :hospital, :hospital_id, :id, :name, class: "form-control" %>
+        <%= collection_select :hospital, :hospital_id, @hospitals, :id, :name, class: "form-control" %>
       </div><!-- 
       <div class="input-group margin-bottom-30">
         <span class="input-group-addon"><i class="fa fa-key"></i></span>
