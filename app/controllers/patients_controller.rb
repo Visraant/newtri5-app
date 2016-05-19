@@ -22,7 +22,8 @@ class PatientsController < ApplicationController
       gender: params[:gender],
       birthdate: params[:birthdate],
       reason_for_visit: params[:reason_for_visit],
-      hospital_id: params[:hospital][:hospital_id]
+      hospital_id: params[:hospital][:hospital_id],
+      status: "Waiting"
     )
     if @patient.save
       flash[:success] = "You successfully checked in!"

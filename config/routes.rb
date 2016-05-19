@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :v1 do
     get '/patients' => 'patients#index'
     get '/patients/:id' => 'patients#check_in'
+    get '/emts' => 'emts#index'
     end
   end
 
@@ -20,9 +21,10 @@ Rails.application.routes.draw do
   get '/' => 'hospitals#index'
   get '/hospitals' => 'hospitals#index'
   get '/hospitals/new' => 'hospitals#new'
+  get '/hospitals/checkins' => 'hospitals#checkins'
   post '/hospitals' => 'hospitals#create'
   # get '/hospitals/:id' => 'hospitals#show'
-  get '/hospitals/emts' => 'hospitals#home'
+  get '/hospitals/emts' => 'hospitals#show'
   get '/hospitals/:id/edit' => 'hospitals#edit'
   patch '/hospitals/:id' => 'hospitals#update'
   delete '/hospitals/:id' => 'hospitals#destroy'

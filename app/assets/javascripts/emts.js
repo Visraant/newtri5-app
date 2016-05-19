@@ -2,7 +2,7 @@
 (function() {
   angular.module('app').controller('emtsCtrl', function($scope, $http) {
     $scope.setup = function() {
-      $http.get('/api/v1/emts.json').then(function(response) {
+      $http.get('/api/v1/emts').then(function(response) {
         $scope.emts = response.data;
         setupMap($scope.emts);
       });

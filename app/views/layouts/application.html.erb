@@ -61,7 +61,7 @@
 
             <!-- Navbar Brand -->
             <div class="navbar-brand">
-              <a href="index.html">
+              <a href="/">
                 <img class="default-logo" src="/assets/img/logo3-light.png" alt="Logo">
                 <img class="shrink-logo" src="/assets/img/logo3-dark.png" alt="Logo">
               </a>
@@ -781,32 +781,15 @@
                   </a>
                   <ul class="dropdown-menu pull-right">
                     <li><%= link_to "Patients Not Checked In", "/" %></li>
-                    <li><%= link_to "EMT Patients", "???????" %></li>
-                    <li><%= link_to "Sort by Patient Wait Time", "/hospitals?sort=patient_wait&sort_order=asc" %></li>
+                    <li><%= link_to "Inbound Patients", "/hospitals/emts" %></li>
                     <li><%= link_to "Patient Check In", "/patients/new" %></li>
+                    <li><%= link_to "EMT Check In", "/emts/new" %></li>
                     <% if current_hospital == nil %>
                       <li><%= link_to "Sign Up", "/hospitals/sign_up" %></li>
                       <li><%= link_to "Sign In", "/hospitals/sign_in" %></li>
                     <% else %>
                       <li><%= link_to "Sign Out", "/hospitals/sign_out", method: :delete %></li>
                     <% end %>
-                    <li><a href="One-Pages/App/index.html">Mobile App</a></li>
-                    <li><a href="One-Pages/Shipping/index.html">Shipping</a></li>
-                    <li><a href="One-Pages/Agency/index.html">Agency</a></li>
-                    <li><a href="One-Pages/Spa/index.html">Spa</a></li>
-                    <li><a href="One-Pages/Lawyer/index.html">Lawyer</a></li>
-                    <li><a href="One-Pages/Business/index.html">Business</a></li>
-                    <li><a href="One-Pages/Wedding/index.html">Wedding</a></li>
-                    <li><a href="One-Pages/Courses/index.html">Courses</a></li>
-                    <li><a href="One-Pages/Construction/index.html">Construction</a></li>
-                    <li><a href="Landing-Pages/Wealth/index.html">Wealth</a></li>
-                    <li><a href="Landing-Pages/Consulting/index.html">Consulting</a></li>
-                    <li><a href="One-Pages/Hero-Fashion/index.html">Hero Fashion</a></li>
-                    <li><a href="One-Pages/Hero-Gym/index.html">Hero Gym</a></li>
-                    <li><a href="One-Pages/Hero-Photography/index.html">Hero Photography</a></li>
-                    <li><a href="One-Pages/Hero-Restaurant/index.html">Hero Restaurant</a></li>
-                    <li><a href="One-Pages/Hero-WebApp/index-dark.html">Hero Web App Dark</a></li>
-                    <li><a href="One-Pages/Hero-WebApp/index.html">Hero Web App Light</a></li>
                   </ul>
                 </li>
                 <!-- End Demo Pages -->

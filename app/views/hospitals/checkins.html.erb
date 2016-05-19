@@ -1,8 +1,7 @@
 <div ng-controller="patients" ng-init="setup()">
 
-<h1>Patients Waiting to be Treated:</h1>
-<button ng-click="sortByTime()"> Sort By Patient Wait Time </button >
-<div ng-repeat="patient in patients" ng-show="patient.status === 'Waiting'">
+<h1>Patients Checked In:</h1>
+<div ng-repeat="patient in patients | orderBy:'-patient_score':false" ng-show="patient.status === 'Waiting'">
   <h2>Name: {{ patient.first_name }} {{ patient.last_name }}</h2>
   <ul>
     <li>Email: {{ patient.email }}</li>

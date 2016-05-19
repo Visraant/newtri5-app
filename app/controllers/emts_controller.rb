@@ -1,4 +1,7 @@
 class EmtsController < ApplicationController
+  def index
+  end
+
   def new
     @emts = Emt.all
     @emt = Emt.new
@@ -7,7 +10,7 @@ class EmtsController < ApplicationController
 
   def create
     @hospitals = Hospital.all
-    @emt = Emt.new(
+    @emt = Emt.create(
       emt_name: params[:emt_name],
       emt_phone_number: params[:emt_phone_number],
       patient_name: params[:patient_name],
@@ -18,5 +21,6 @@ class EmtsController < ApplicationController
       patient_address: params[:patient_address],
       hospital_id: params[:hospital][:hospital_id]
     )
+    redirect_to '/emts/new'
   end
 end
